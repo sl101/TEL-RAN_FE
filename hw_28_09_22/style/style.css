@@ -19,16 +19,16 @@ main {
 	padding: 50px 40px;
 }
 
+.schedule,
 th,
 td {
 	border: 1px solid black;
 }
 
-.table {
+.schedule {
 	max-width: 1592px;
 	max-height: 901px;
 	font-size: 30px;
-	border: 1px solid black;
 	box-shadow: 1px 1px 3px 0 black;
 }
 
@@ -42,14 +42,14 @@ th {
 	box-shadow: inset 1px 1px 3px 0 black;
 }
 
-.table__table {
-	position: relative;
+.schedule__inner {
+	poschedulesition: relative;
 	padding: 0;
 	border: 0;
 	box-shadow: inset 0px 0px 0px 0 transparent;
 }
 
-.table__inner {
+.schedule__box {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -60,7 +60,7 @@ th {
 	justify-content: space-between;
 }
 
-.table__xpath {
+.schedule__block {
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -69,19 +69,19 @@ th {
 	box-shadow: inset 1px 1px 3px 0 black;
 }
 
-.table__xpath:first-child {
+.schedule__block:first-child {
 	margin-bottom: 2px;
 }
 
-.table__time {
+.schedule__time {
 	background-color: #fffed0;
 }
 
-.table__time--day {
+.schedule__time--day {
 	background-color: #d2fad1;
 }
 
-.table__time--evening {
+.schedule__time--evening {
 	background-color: #cfd0fd;
 }
 

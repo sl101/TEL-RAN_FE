@@ -13,7 +13,7 @@
 	<div class="wrapper">
 
 		<main>
-			<table class="table">
+			<table class="table schedule">
 				<tr>
 					<th rowspan="3">Day</th>
 					<th colspan="3">Seminar</th>
@@ -31,8 +31,8 @@
 
 				<tr>
 					<td rowspan="2">Monday</td>
-					<td class="table__time" rowspan="2">8:00 a.m</td>
-					<td class="table__time table__time--evening" rowspan="2">5:00 p.m</td>
+					<td class="schedule__time" rowspan="2">8:00 a.m</td>
+					<td class="schedule__time schedule__time--evening" rowspan="2">5:00 p.m</td>
 					<td>Introduction to XMl</td>
 				</tr>
 
@@ -42,38 +42,35 @@
 
 				<tr>
 					<td rowspan="3">Tuesday</td>
-					<td class="table__time">8:00 a.m</td>
-					<td class="table__time">11:00 a.m</td>
-					<td class="table__table" rowspan="3">
+					<td class="schedule__time">8:00 a.m</td>
+					<td class="schedule__time">11:00 a.m</td>
+					<td class="schedule__inner" rowspan="3">
 
-						<table>
-							<div class="table__inner">
-								<div class="table__xpath">XPath</div>
-								<div class="table__xpath">XLS Transformations</div>
-							</div>
-						</table>
+						<div class="schedule__box">
+							<div class="schedule__block">XPath</div>
+							<div class="schedule__block">XLS Transformations</div>
+						</div>
+
 					</td>
 				</tr>
 
 				<tr>
-					<td class="table__time">11:00 a.m</td>
-					<td class="table__time table__time--day">2:00 p.m</td>
+					<td class="schedule__time">11:00 a.m</td>
+					<td class="schedule__time schedule__time--day">2:00 p.m</td>
 				</tr>
 
 				<tr>
-					<td class="table__time table__time--day">2:00 p.m</td>
-					<td class="table__time table__time--evening">5:00 p.m</td>
+					<td class="schedule__time schedule__time--day">2:00 p.m</td>
+					<td class="schedule__time schedule__time--evening">5:00 p.m</td>
 				</tr>
 
 				<tr>
 					<td>Wednesday</td>
-					<td class="table__time">8:00 a.m</td>
-					<td class="table__time table__time--day">12:00 p.m</td>
+					<td class="schedule__time">8:00 a.m</td>
+					<td class="schedule__time schedule__time--day">12:00 p.m</td>
 					<td>XLS Formatting Objects</td>
 				</tr>
 			</table>
-
-
 		</main>
 
 		<footer class="footer">
