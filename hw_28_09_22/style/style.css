@@ -43,7 +43,7 @@ th {
 }
 
 .schedule__inner {
-	poschedulesition: relative;
+	position: relative;
 	padding: 0;
 	border: 0;
 	box-shadow: inset 0px 0px 0px 0 transparent;
