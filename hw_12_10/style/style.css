@@ -1,0 +1,58 @@
+/* Variables ============ */
+* {
+	--wight-color: #fff;
+	--black-color: #000;
+	--accent-light: #4fbfa5;
+	--accent-dark: #00868a;
+}
+
+/* Доступность ============ */
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+/* Страница ============================= */
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: "ABeeZee", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	background-color: var(--wight-color);
+	color: var(--wight-color);
+}
+
+
+/* ОБОЛОЧКА ========================= */
+.wrapper {
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+/* ОСНОВНОЙ БЛОК ===================== */
+.main {
+	flex: 1 1 auto;
+}
+
+/* ОСНОВНОЙ КОНТЕЙНЕР ===================== */
+._container {
+	max-width: 1330px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/* ======================================= */
