@@ -391,3 +391,11 @@ body {
 }
 
 /* Footer =================== */
+.footer__content {
+	border-top: 1px solid var(--divider-color);
+	padding-bottom: 20px;
+}
+
+.footer__content .media {
+	border-left: 1px solid var(--divider-color);
+}
