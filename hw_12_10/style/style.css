@@ -9,19 +9,6 @@
 	--hover-time: .4s;
 }
 
-/* Доступность ============ */
-.sr-only {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	padding: 0;
-	margin: -1px;
-	overflow: hidden;
-	clip: rect(0, 0, 0, 0);
-	white-space: nowrap;
-	border: 0;
-}
-
 /* Страница ============================= */
 html,
 body {
@@ -175,12 +162,6 @@ body {
 .nav__link {
 	position: relative;
 	top: 0;
-	/* background:
-		linear-gradient(to right, var(--accent-light)),
-		linear-gradient(to right, var(--white-color));
-	background-size: 100% 2px, 0 2px;
-	background-position: 100% 100%, 0 100%;
-	background-repeat: no-repeat; */
 	background:
 		linear-gradient(to right,
 			var(--accent-light),
@@ -242,6 +223,7 @@ body {
 	top: 1px;
 }
 
+/* Hero ========================================= */
 .hero {
 	background-color: var(--accent-light);
 }
@@ -285,5 +267,127 @@ body {
 .hero__picture {
 	max-width: 746px;
 	min-height: 533px;
-
 }
+
+/* Gallery ================================== */
+
+.gallery {
+	padding: 146px 0 130px;
+}
+
+.gallery__title {
+	text-align: center;
+	font-size: 48px;
+	line-height: 72px;
+	color: var(--accent-dark);
+	margin-bottom: 60px;
+}
+
+.gallery__content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 24px;
+}
+
+.cart {
+	max-width: 306px;
+	min-height: 343px;
+	background-color: var(--accent-dark);
+}
+
+.cart__picture {
+	display: block;
+	width: 100%;
+	height: 230px;
+	outline: none;
+	overflow: hidden;
+	background-color: var(--accent-dark);
+	transition: border-color var(--hover-time) linear;
+}
+
+.cart__picture:focus {
+	opacity: .9;
+}
+
+.cart__picture:hover .cart__image {
+	transform: scale(1.1);
+}
+
+.cart__image {
+	object-fit: cover;
+	transition: hoverTime ease;
+	transition: transform var(--hover-time) linear;
+}
+
+.cart__content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 25px 30px;
+}
+
+.cart__description {
+	max-width: 180px;
+	font-size: 21px;
+	line-height: 32px;
+}
+
+.cart__button {
+	position: relative;
+	top: 0;
+	width: 50px;
+	height: 40px;
+	border: 1px solid var(--white-color);
+	outline: none;
+	transition: background-color var(--hover-time) linear;
+}
+
+.cart__button:focus {
+	box-shadow: 5px 5px 10px 0 var(--black-color);
+}
+
+.cart__button:hover {
+	background-color: var(--white-color);
+}
+
+.cart__button:hover .btn__arrow {
+	background-color: var(--accent-dark);
+}
+
+.cart__button:active {
+	top: 1px;
+}
+
+.btn__arrow.btn__arrow {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 20px;
+	height: 1px;
+	background-color: var(--white-color);
+	transition: background-color var(--hover-time) linear;
+}
+
+.btn__arrow::before,
+.btn__arrow::after {
+	content: "";
+	position: absolute;
+	right: 2px;
+	width: 1px;
+	height: 8px;
+	background-color: inherit;
+}
+
+.btn__arrow::before {
+	top: -1px;
+	transform: rotate(45deg);
+}
+
+.btn__arrow::after {
+	bottom: -1px;
+	transform: rotate(-45deg);
+}
+
+/* Footer =================== */
