@@ -1,9 +1,12 @@
-/* Variables ============ */
+/* Variables============ */
 * {
 	--wight-color: #fff;
 	--black-color: #000;
+	--divider-color: #c4c4c4;
 	--accent-light: #4fbfa5;
 	--accent-dark: #00868a;
+
+	--hover-time: .4s;
 }
 
 /* Доступность ============ */
@@ -29,8 +32,7 @@ body {
 	font-family: "ABeeZee", sans-serif;
 	font-weight: 400;
 	font-size: 18px;
-	/* background-color: var(--wight-color); */
-	background-color: var(--accent-dark);
+	background-color: var(--wight-color);
 	color: var(--wight-color);
 }
 
@@ -50,10 +52,98 @@ body {
 }
 
 /* ОСНОВНОЙ КОНТЕЙНЕР ===================== */
-._container {
+.container {
 	max-width: 1330px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
 
-/* ======================================= */
+/* Header ============================ */
+.header__top {
+	height: 90px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: transparent;
+	border-left: 1px solid var(--divider-color);
+}
+
+.logo {
+	position: relative;
+	top: 0;
+	max-width: 74px;
+	height: 74px;
+	border-radius: 50%;
+	outline: none;
+	transition: transform var(--hover-time) linear, box-shadow var(--hover-time) linear;
+}
+
+.logo:hover {
+	transform: scale(1.2);
+}
+
+.logo:focus {
+	box-shadow: 5px 5px 15px 0 var(--black-color);
+}
+
+.logo:active {
+	top: 1px;
+}
+
+.media {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.media__item {
+	flex: 0 0 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	border-right: 1px solid var(--divider-color);
+}
+
+.media__item:first-child {
+	border-left: 1px solid var(--divider-color);
+}
+
+.media__link {
+	position: relative;
+	top: 0;
+	flex: 0 0 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 50px;
+	outline: none;
+	border-radius: 50%;
+	transition: box-shadow var(--hover-time) linear;
+}
+
+.media__link:hover .media__icon {
+	transform: scale(1.2);
+}
+
+.media__link:focus .media__icon {
+	transform: scale(1.2);
+}
+
+.media__link:focus {
+	box-shadow: 5px 5px 15px 0 var(--black-color);
+}
+
+.media__link:active {
+	top: 1px;
+}
+
+.media__icon {
+	width: 25px;
+	height: 25px;
+	fill: var(--accent-light);
+	transition: transform var(--hover-time) linear;
+}
+
+.header__bottom {}

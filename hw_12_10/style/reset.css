@@ -5,33 +5,9 @@ html {
 *,
 *::after,
 *::before {
-	box-sizing: inherit;
-}
-
-ul,
-ol,
-li,
-button {
 	padding: 0;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol,
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
 	margin: 0;
+	box-sizing: inherit;
 }
 
 h1,
@@ -45,7 +21,8 @@ h6 {
 }
 
 ul,
-li {
+li,
+ol {
 	list-style: none;
 }
 
@@ -61,23 +38,26 @@ button,
 textarea,
 select {
 	font: inherit;
-	cursor: pointer;
-	margin: 0;
 }
 
-textarea.input {
+input,
+textarea {
+	cursor: text;
+}
+
+textarea {
 	resize: none;
 }
 
 button {
-	border: none;
+	border: transparent;
 	color: transparent;
-	background: transparent;
+	background-color: transparent;
 }
 
 a {
-	border: none;
-	background: transparent;
+	border: transparent;
+	background-color: transparent;
 	text-decoration: none;
 	color: inherit;
 }
