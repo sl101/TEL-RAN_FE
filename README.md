@@ -1,6 +1,6 @@
 # TEL-RAN_FE
 
-- - [ ] hw_12_10 [(\_sourse\_)](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_12_10) - [\_"Lampe"\_](https://sl101.github.io/TEL-RAN_FE/hw_12_10)
+- - [ ] [hw_12_10 (sourse)](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_12_10) - [_"Lampe"_](https://sl101.github.io/TEL-RAN_FE/hw_12_10)
 
 =========================================
 
