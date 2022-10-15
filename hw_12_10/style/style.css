@@ -55,7 +55,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	background-color: transparent;
-	border: 1px solid var(--divider-color);
+	border-left: 1px solid var(--divider-color);
 }
 
 .logo {
@@ -302,12 +302,12 @@ body {
 	height: 230px;
 	outline: none;
 	overflow: hidden;
-	background-color: var(--accent-dark);
-	transition: border-color var(--hover-time) linear;
+	background-color: var(--white-color);
+	transition: opacity var(--hover-time) linear;
 }
 
 .cart__picture:focus {
-	opacity: .9;
+	opacity: .7;
 }
 
 .cart__picture:hover .cart__image {
