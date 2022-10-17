@@ -297,7 +297,9 @@ body {
 	background-color: var(--accent-dark);
 }
 
-.cart__sentence {
+.cart:nth-child(3)::after,
+.cart:nth-child(4)::after {
+	content: 'new';
 	position: absolute;
 	z-index: 50;
 	top: 30px;
@@ -307,22 +309,6 @@ body {
 	padding: 10px 15px;
 	background-color: var(--accent-dark);
 	color: var(--white-color);
-	outline: none;
-	transition: background-color var(--hover-time) linear, color var(--hover-time) linear, box-shadow var(--hover-time) linear;
-}
-
-.cart__sentence:focus {
-	box-shadow: 5px 5px 10px 0 var(--black-color);
-}
-
-.cart__sentence:hover {
-	box-shadow: 5px 5px 10px 0 var(--black-color);
-	background-color: var(--white-color);
-	color: var(--accent-dark);
-}
-
-.cart__sentence:active {
-	top: 31px;
 }
 
 .cart__picture {
