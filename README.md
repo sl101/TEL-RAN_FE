@@ -1,10 +1,10 @@
 # TEL-RAN_FE
 
-- - [ ] hw*21_10 - [*"BuhOne"\_](https://sl101.github.io/TEL-RAN_FE/hw_21_10)
+- - [ ] hw\*21*10 - [*"BuhOne"\_](https://sl101.github.io/TEL-RAN_FE/hw_21_10)
 
 =========================================
 
-- - [x] hw*12_10 - [*"Lampe"\_](https://sl101.github.io/TEL-RAN_FE/hw_12_10)
+- - [x] hw\*12*10 - [*"Lampe"\_](https://sl101.github.io/TEL-RAN_FE/hw_12_10)
 
 =========================================
 
