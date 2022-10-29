@@ -1,10 +1,10 @@
 # TEL-RAN_FE
 
-- - [ ] hw\*29*10 - [*"prog-center_JS-tasks"\_](https://sl101.github.io/TEL-RAN_FE/hw_29_10/script.js)
+- - [ ] hw\*29\*10 - [_"JS-tasks"_](https://sl101.github.io/TEL-RAN_FE/hw_29_10/script.js)
 
 =========================================
 
-- - [x] hw\*21*10 - [*"BuhOne"\_](https://sl101.github.io/TEL-RAN_FE/hw_21_10)
+- - [x] hw\*21\*10 - [_"BuhOne"_](https://sl101.github.io/TEL-RAN_FE/hw_21_10)
 
 =========================================
 
