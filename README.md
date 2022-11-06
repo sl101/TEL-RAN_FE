@@ -1,6 +1,6 @@
 # TEL-RAN_FE
 
-- - [ ] hw_06_11 - [\_"JS-tasks"\_](https://sl101.github.io/TEL-RAN_FE/hw_29_10/script.js)
+- - [ ] hw_06_11 - [\_"JS-tasks"\_](https://sl101.github.io/TEL-RAN_FE/hw_06_11/script.js)
 
 =========================================
 
