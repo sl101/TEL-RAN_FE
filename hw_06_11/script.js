@@ -11,29 +11,20 @@ console.log(max_number(100, 565));
 // с числовым значением и возвращает массив с числами от n до m -1.
 console.log(`===================\ntask_14...`);
 function range(n, m) {
-	let instructions = increment;
-	if (n > m) {
-		instructions = decrement;
-	}
-	return instructions(n, m);
-}
-
-function decrement(n, m) {
 	const array = [];
-	for (let i = n; i >= m - 1; i--) {
-		array.push(i);
-	}
-	return array;
-}
-function increment(n, m) {
-	const array = [];
-	for (let i = n; i <= m - 1; i++) {
-		array.push(i);
+	if (n < m) {
+		for (let i = n; i <= m - 1; i++) {
+			array.push(i);
+		}
+	} else {
+		for (let i = m; i <= n - 1; i++) {
+			array.push(i);
+		}
 	}
 	return array;
 }
 
-console.log(range(33, 7));
+console.log(range(3, 17));
 
 // Напишите функцию, num_count,
 // которая в качестве аргумента принимает целое число
