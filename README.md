@@ -1,10 +1,10 @@
 # TEL-RAN_FE
 
-- ## [ ] hw_16_11 - [\_"JS-tasks"\_](https://sl101.github.io/TEL-RAN_FE/hw_06_11/script.js)
+- ## [x] hw_06_11 - [\_"JS-DOM"\_](https://sl101.github.io/TEL-RAN_FE/hw_16_11/)
 
 =========================================
 
-- ## [x] hw_06_11 - [\_"JS-DOM"\_](https://sl101.github.io/TEL-RAN_FE/hw_16_11/)
+- - [x] hw_16_11 - [\_"JS-tasks"\_](https://sl101.github.io/TEL-RAN_FE/hw_06_11/script.js)
 
 =========================================
 
