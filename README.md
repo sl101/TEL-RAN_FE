@@ -1,6 +1,6 @@
 # TEL-RAN_FE
 
-- ## [x] hw_06_11 - [\_"JS-DOM"\_](https://sl101.github.io/TEL-RAN_FE/hw_16_11/)
+- ## [ ] hw*06_11 - [\_"JS-DOM"\_](https://sl101.github.io/TEL-RAN_FE/hw_16_11/) ( *[JS](https://github.com/sl101/TEL-RAN_FE/hw_16_11/script/script.js)_ , _[CSS](https://github.com/sl101/TEL-RAN_FE/hw_16_11/style/style.css)\_ )
 
 =========================================
 
