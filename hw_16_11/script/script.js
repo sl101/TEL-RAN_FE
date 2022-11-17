@@ -68,7 +68,7 @@ total_field.innerText = `=======\nTotal:\n${total_price}\n${total_count}`;
 
 task_2.appendChild(root_field);
 task_2.appendChild(total_field);
-body.appendChild(task_2);
+body.append(task_2);
 
 // TASK 3 ===============================================
 const table_title = ['No.', 'Full Name', 'Position', 'Salary'];
