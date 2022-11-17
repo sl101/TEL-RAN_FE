@@ -48,15 +48,16 @@ for (let i = 0; i < goods.length; i++) {
 
 // TASK 2 ===============================================
 const body = document.querySelector('body');
-const root_field = document.createElement('div');
+const task_2 = document.createElement('div');
+const root_field = document.createElement('ol');
 
 let total_price = 0;
 let total_count = 0;
 
 for (let i = 0; i < goods.length; i++) {
 	const { title, price, count } = goods[i];
-	const item = document.createElement('p');
-	item.innerText = `${i + 1}.\n${title}\nprice:${price}\ncount:${count}`;
+	const item = document.createElement('li');
+	item.innerText = `${title}\nprice:${price}\ncount:${count}`;
 	root_field.appendChild(item);
 
 	total_price += count * price;
@@ -65,8 +66,9 @@ for (let i = 0; i < goods.length; i++) {
 const total_field = document.createElement('p');
 total_field.innerText = `=======\nTotal:\n${total_price}\n${total_count}`;
 
-body.appendChild(root_field);
-body.appendChild(total_field);
+task_2.appendChild(root_field);
+task_2.appendChild(total_field);
+body.appendChild(task_2);
 
 // TASK 3 ===============================================
 const table_title = ['No.', 'Full Name', 'Position', 'Salary'];
@@ -111,21 +113,36 @@ for (let i = 0; i < table_title.length; i++) {
 }
 table.appendChild(tr_title);
 
+// Вариант 1 =========================================
+// for (let i = 0; i < table_array.length; i++) {
+// 	const tr = document.createElement('tr');
+// 	const { id, fullName, position, salary } = table_array[i];
+// 	const td_id = document.createElement('td');
+// 	td_id.innerText = id;
+// 	const td_fullName = document.createElement('td');
+// 	td_fullName.innerText = fullName;
+// 	const td_position = document.createElement('td');
+// 	td_position.innerText = position;
+// 	const td_isalary = document.createElement('td');
+// 	td_isalary.innerText = salary;
+// 	tr.append(td_id);
+// 	tr.append(td_fullName);
+// 	tr.append(td_position);
+// 	tr.append(td_isalary);
+// 	table.appendChild(tr);
+// }
+
+// Вариант 2 =========================================
 for (let i = 0; i < table_array.length; i++) {
+	const objArray = Object.values(table_array[i]);
 	const tr = document.createElement('tr');
-	const { id, fullName, position, salary } = table_array[i];
-	const td_id = document.createElement('td');
-	td_id.innerText = id;
-	const td_fullName = document.createElement('td');
-	td_fullName.innerText = fullName;
-	const td_position = document.createElement('td');
-	td_position.innerText = position;
-	const td_isalary = document.createElement('td');
-	td_isalary.innerText = salary;
-	tr.append(td_id);
-	tr.append(td_fullName);
-	tr.append(td_position);
-	tr.append(td_isalary);
+
+	for (let j = 0; j < objArray.length; j++) {
+		const td = document.createElement('td');
+		td.innerText = objArray[j];
+		tr.append(td);
+	}
+
 	table.appendChild(tr);
 }
 
