@@ -7,11 +7,11 @@ const par_1 = document.createElement('p');
 par_1.innerText =
 	'Создайте параграф и одну кнопку. Добавьте стили для этих элементов используя javascript. Сделайте так, чтобы при клике на кнопку исчезал параграф , а при повторном клике появлялся обратно.';
 par_1.style.cssText =
-	'max-width: 100%; min-height: 50px; padding: 10px 15px; border: 1px solid black; border-radius: 5px; margin: 0 auto 25px; opacity: 1; transition: opacity .4s ease; box-shadow: inset 0 0 15px black';
+	'max-width: 100%; min-height: 50px; padding: 10px 15px; border: 1px solid grey; border-radius: 5px; margin: 0 auto 25px; opacity: 1; transition: opacity .4s ease; box-shadow: inset 0 0 15px black, 0 0 0 3px white, 0 0 0 4px grey, 5px 5px 10px black;';
 const btn_1 = document.createElement('button');
 btn_1.innerText = 'Click on';
 btn_1.style.cssText =
-	'line-height: 30px; padding: 6px 30px; border: 1px solid black; border-radius: 5px; margin: 0 0 15px 15px; cursor: pointer; font: inherit; box-shadow: 5px 5px 15px black';
+	'line-height: 30px; padding: 6px 30px; border: 1px solid black; border-radius: 5px; margin: 0 0 15px 15px; cursor: pointer; font: inherit; box-shadow: 5px 5px 15px black;';
 
 btn_1.onclick = () => {
 	par_1.style.opacity = par_1.style.opacity === '0' ? '1' : '0';
@@ -45,8 +45,8 @@ const colors_list = document.createElement('ul');
 colors_list.style.cssText = 'padding: 0 0 0 15px; margin: 0 0 30px;';
 
 for (let item of colors_array) {
-	const color_field = document.createElement('div');
-	color_field.style.cssText = `display: inline-block; width: 60px; height: 60px; border: 1px solid black; border-radius: 5px; margin: 5px; cursor: pointer;`;
+	const color_field = document.createElement('button');
+	color_field.style.cssText = `display: inline-block; width: 60px; height: 60px; border: 1px solid black; border-radius: 5px; margin: 5px; cursor: pointer; box-shadow: 5px 5px 10px black;`;
 	color_field.style.backgroundColor = item;
 
 	color_field.onclick = () => {
@@ -103,7 +103,8 @@ for (let film of films_array) {
 	story_field.style.cssText =
 		'padding: 0 15px; margin: 0 0 10px; max-width: 100%; height: 0; opacity: 0; transition: height .4s ease, opacity .4s ease;';
 	title_field.onclick = () => {
-		story_field.style.height = story_field.style.height === '100%' ? 0 : '100%';
+		story_field.style.height =
+			story_field.style.height === '100%' ? '0' : '100%';
 		story_field.style.opacity = story_field.style.opacity === '1' ? '0' : '1';
 	};
 
@@ -124,7 +125,7 @@ const btn_array = "1234567890-=qwertyuiop[]asdfghjkl;'zxcvbnm,./ ".split('');
 const task_4 = document.createElement('div');
 const par_3 = document.createElement('p');
 par_3.style.cssText =
-	'max-width: 100%; min-height: 40px; background-color: white; padding: 5px 15px; margin: 0 0 15px; border-radius: 5px; cursor: default;';
+	'max-width: 70%; min-height: 40px; background-color: white; padding: 5px 15px; margin: 0 auto 15px; border-radius: 5px; cursor: default;';
 task_4.append(par_3);
 
 const keyboard = document.createElement('ul');
@@ -132,25 +133,25 @@ keyboard.style.cssText =
 	'position: relative; z-index: 20; display: flex; max-width: 513px; flex-wrap: wrap; gap: 3px; justify-content:center; margin: 0 auto';
 
 for (let item of btn_array) {
-	const btn = document.createElement('div');
-	btn.innerText = item;
-	btn.style.cssText =
-		'display: inline-blocl; width: 40px; height: 40px; text-align: center; line-height: 40px;cursor: pointer; background-color: #ddd; border: 1px solid black; border-radius: 5px;';
+	const btn_2 = document.createElement('button');
+	btn_2.innerText = item;
+	btn_2.style.cssText =
+		'display: inline-blocl; width: 40px; height: 40px; text-align: center; line-height: 40px;cursor: pointer; background-color: #ddd; border: 1px solid black; border-radius: 5px; box-shadow: 2px 2px 5px black;';
 
 	if (item === 'a') {
-		btn.style.marginLeft = '5px';
+		btn_2.style.marginLeft = '5px';
 	} else if (item === ' ') {
-		btn.style.width = '212px';
-		btn.style.marginRight = '40px';
+		btn_2.style.width = '212px';
+		btn_2.style.marginRight = '40px';
 	}
-	btn.addEventListener('click', () => {
+	btn_2.addEventListener('click', () => {
 		par_3.innerText += item;
 		if (item === ' ') {
 			par_3.innerText = ' ';
 		}
 	});
 
-	keyboard.append(btn);
+	keyboard.append(btn_2);
 }
 
 task_4.append(keyboard);

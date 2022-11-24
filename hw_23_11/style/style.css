@@ -24,6 +24,16 @@ body {
 	max-width: 1330px;
 	min-height: 100vh;
 	padding: 15px;
+	padding-bottom: 70px;
 	margin: 0 auto;
+}
 
+button {
+	position: relative;
+	top: 0;
+
+}
+
+button:active {
+	top: 1px;
 }
