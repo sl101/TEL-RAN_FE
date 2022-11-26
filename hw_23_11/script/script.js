@@ -99,13 +99,11 @@ for (let film of films_array) {
 		'display: inline-block; position: relative; z-index: 20; font-weight: 700; 	font-size: 24px; padding: 0; margin: 0 0 10px; cursor: pointer;';
 
 	const story_field = document.createElement('p');
+	story_field.classList.add('description');
 	story_field.innerText = story;
-	story_field.style.cssText =
-		'padding: 0 15px; margin: 0 0 10px; max-width: 100%; height: 0; opacity: 0; transition: height .4s ease, opacity .4s ease;';
+
 	title_field.onclick = () => {
-		story_field.style.height =
-			story_field.style.height === '100%' ? '0' : '100%';
-		story_field.style.opacity = story_field.style.opacity === '1' ? '0' : '1';
+		story_field.classList.toggle('active');
 	};
 
 	films_list.append(title_field, story_field);
