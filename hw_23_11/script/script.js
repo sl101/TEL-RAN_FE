@@ -49,7 +49,7 @@ for (let item of colors_array) {
 	color_field.style.cssText = `display: inline-block; width: 60px; height: 60px; border: 1px solid black; border-radius: 5px; margin: 5px; cursor: pointer; box-shadow: 5px 5px 10px black;`;
 	color_field.style.backgroundColor = item;
 
-	color_field.onclick = () => {
+	color_field.onmouseover = () => {
 		document.body.style.backgroundColor =
 			document.body.style.backgroundColor === item ? 'white' : item;
 	};
