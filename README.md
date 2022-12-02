@@ -1,6 +1,6 @@
 # TEL-RAN_FE
 
-- ## [ ] hw_01_12 - ( [HTML](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_01_12/index.html), [ JS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_01_12/script/script.js), [ CSS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_01_12/style/style.css) ) [ \_"Events"\_](https://sl101.github.io/TEL-RAN_FE/hw_01_12/)
+- ## [ ] hw_01_12 - ( [HTML](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_01_12/index.html), [ JS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_01_12/script/script.js), [ CSS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_01_12/style/style.css) ) [ \_"Slider"\_](https://sl101.github.io/TEL-RAN_FE/hw_01_12/)
 
 =========================================
 
