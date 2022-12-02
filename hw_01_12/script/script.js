@@ -24,7 +24,7 @@ setWallPaper();
 createSliderList();
 
 function setWallPaper() {
-	document.body.style.cssText = `background-image: url(media/wall/skin_texture.jpg);`;
+	document.body.style.cssText = `background-image: url(media/wall/leather_skin.webp);`;
 }
 
 function createSliderList() {
@@ -33,7 +33,7 @@ function createSliderList() {
 		slide.classList.add('slide');
 		const img = document.createElement('img');
 		img.classList.add('img');
-		img.setAttribute('src', `media/carts/${item}.jpg`);
+		img.setAttribute('src', `media/carts/${item}.webp`);
 
 		const emblem = `${item[0].toUpperCase()}${item.slice(1)}`;
 		img.setAttribute(
