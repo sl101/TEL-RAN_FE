@@ -9,14 +9,14 @@ const images = [
 	'tyrell',
 	'martell',
 ];
-
+const wrapper = document.querySelector('.wrapper');
 const sliderWrapper = document.querySelector('.slider__wrapper');
 const btnPrev = document.querySelector('.prev');
 const btnNext = document.querySelector('.next');
 
 let transform = 0;
 const imgWidth = 400;
-const gap = 20;
+const gap = 70;
 const wrapWidth = imgWidth * images.length + (images.length - 1) * gap;
 sliderWrapper.style.width = `${wrapWidth}px`;
 
@@ -24,7 +24,7 @@ setWallPaper();
 createSliderList();
 
 function setWallPaper() {
-	document.body.style.cssText = `background-image: url(media/wall/leather_skin.webp);`;
+	wrapper.style.cssText = `background-image: url(media/wall/leather_skin.webp);`;
 }
 
 function createSliderList() {
