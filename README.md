@@ -40,4 +40,4 @@
 
 =========================================
 
-- - [x] [hw_28_09](https://sl101.github.io/TEL-RAN_FE/hw_28_09) - _"Schedule table"_ ( _[HTML](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_28_09/index.html)_ , _[CSS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_28_09/style/style.css)_ )
+- - [x] [hw_09_28](https://sl101.github.io/TEL-RAN_FE/hw_09_28) - _"Schedule table"_ ( _[HTML](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_09_28/index.html)_ , _[CSS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_09_28/style/style.css)_ )
