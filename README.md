@@ -1,42 +1,42 @@
 # TEL-RAN_FE
 
-- ## [ ] hw_06_12 - ( [HTML](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_06_12/index.html), [ JS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_06_12/script/script.js), [ CSS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_06_12/style/style.css) ) [ \_"RPS game"\_](https://sl101.github.io/TEL-RAN_FE/hw_06_12/)
+- ## [ ] hw_12_06 - ( [HTML](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_12_06/index.html), [ JS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_12_06/script/script.js), [ CSS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_12_06/style/style.css) ) [ \_"RPS game"\_](https://sl101.github.io/TEL-RAN_FE/hw_12_06/)
 
 =========================================
 
-- ## [ ] hw_01_12 - ( [HTML](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_01_12/index.html), [ JS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_01_12/script/script.js), [ CSS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_01_12/style/style.css) ) [ \_"Slider"\_](https://sl101.github.io/TEL-RAN_FE/hw_01_12/)
+- ## [ ] hw_12_01 - ( [HTML](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_12_01/index.html), [ JS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_12_01/script/script.js), [ CSS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_12_01/style/style.css) ) [ \_"Slider"\_](https://sl101.github.io/TEL-RAN_FE/hw_12_01/)
 
 =========================================
 
-- - [x] hw_28_11 - ( [HTML](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_28_11/index.html), [ JS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_28_11/script/script.js), [ CSS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_28_11/style/style.css) ) [ \_"Events"\_](https://sl101.github.io/TEL-RAN_FE/hw_28_11/)
+- - [x] hw_11_28 - ( [HTML](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_11_28/index.html), [ JS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_11_28/script/script.js), [ CSS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_11_28/style/style.css) ) [ \_"Events"\_](https://sl101.github.io/TEL-RAN_FE/hw_11_28/)
 
 =========================================
 
-- - [x] hw_23_11 - ( [HTML](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_23_11/index.html), [ JS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_23_11/script/script.js), [ CSS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_23_11/style/style.css) ) [ \_"JS style"\_](https://sl101.github.io/TEL-RAN_FE/hw_23_11/)
+- - [x] hw_11_23 - ( [HTML](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_11_23/index.html), [ JS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_11_23/script/script.js), [ CSS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_11_23/style/style.css) ) [ \_"JS style"\_](https://sl101.github.io/TEL-RAN_FE/hw_11_23/)
 
 =========================================
 
-- - [x] hw_21_11 - ( [HTML](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_21_11/index.html), [ JS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_21_11/script/script.js), [ CSS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_21_11/style/style.css) ) [ \_"Preview gallery"\_](https://sl101.github.io/TEL-RAN_FE/hw_21_11/)
+- - [x] hw_11_21 - ( [HTML](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_11_21/index.html), [ JS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_11_21/script/script.js), [ CSS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_11_21/style/style.css) ) [ \_"Preview gallery"\_](https://sl101.github.io/TEL-RAN_FE/hw_11_21/)
 
 =========================================
 
-- - [x] hw_16_11 - ([JS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_16_11/script/script.js), [CSS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_16_11/style/style.css)) [\_"JS-DOM"\_](https://sl101.github.io/TEL-RAN_FE/hw_16_11/)
+- - [x] hw_11_16 - ([JS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_11_16/script/script.js), [CSS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_11_16/style/style.css)) [\_"JS-DOM"\_](https://sl101.github.io/TEL-RAN_FE/hw_11_16/)
 
 =========================================
 
-- - [x] hw_06_11 - [\_"JS-tasks"\_](https://sl101.github.io/TEL-RAN_FE/hw_06_11/script.js)
+- - [x] hw_11_06 - [\_"JS-tasks"\_](https://sl101.github.io/TEL-RAN_FE/hw_11_06/script.js)
 
 =========================================
 
-- - [x] hw_29_10 - [\_"JS-tasks"\_](https://sl101.github.io/TEL-RAN_FE/hw_29_10/script.js)
+- - [x] hw_10_29 - [\_"JS-tasks"\_](https://sl101.github.io/TEL-RAN_FE/hw_10_29/script.js)
 
 =========================================
 
-- - [x] hw_21_10 - [\_"BuhOne"\_](https://sl101.github.io/TEL-RAN_FE/hw_21_10)
+- - [x] hw_10_21 - [\_"BuhOne"\_](https://sl101.github.io/TEL-RAN_FE/hw_10_21)
 
 =========================================
 
-- - [x] hw_12_10 - [\_"Lampe"\_](https://sl101.github.io/TEL-RAN_FE/hw_12_10)
+- - [x] hw_10_12 - [\_"Lampe"\_](https://sl101.github.io/TEL-RAN_FE/hw_10_12)
 
 =========================================
 
