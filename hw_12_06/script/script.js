@@ -1,68 +1,71 @@
 const items = document.querySelectorAll('.item');
-const resultField = document.querySelector('.result');
-const smileBtn = document.querySelector('.smile');
 const compChoice = document.querySelector('.comp-choice');
-const scoreField = document.querySelector('.score');
+const smileBtn = document.querySelector('.smile');
+let userScore = 0;
+let compScore = 0;
 
-start();
-
-function start() {
-	for (let element of items) {
-		element.addEventListener('click', getResult);
-	}
-	smileBtn.addEventListener('click', removeActive);
+for (let item of items) {
+	item.addEventListener('click', startGame);
 }
+smileBtn.addEventListener('click', removeAnimation);
 
-function removeActive() {
-	const activeClasses = document.querySelectorAll('.active');
-	const hidedClasses = document.querySelectorAll('.hide');
-	const items = document.querySelectorAll('.item');
-	compChoice.firstElementChild.src = '#';
-
-	for (let element of activeClasses) {
-		element.classList.remove('active');
-	}
-	for (let element of hidedClasses) {
-		element.classList.remove('hide');
-	}
-}
-
-function getResult(e) {
-	for (let index = 0; index < items.length; index++) {
-		const element = items[index];
-		if (element.firstElementChild == e.target) {
-			const compMove = Math.floor(Math.random() * 3);
-
-			resultField.textContent =
-				compMove == index ? 'Draw' : calcWinner(compMove, index);
-			userAnimation(index);
-			compAnimation(compMove);
+function startGame(e) {
+	let index;
+	for (let i in items) {
+		if (items[i] == e.target) {
+			index = i;
 		}
 	}
+	const compMove = Math.floor(Math.random() * 3);
+
+	const resultField = document.querySelector('.result');
+	resultField.classList.add('active');
+	const resultMessage = compMove == index ? 'Draw' : getWinner(compMove, index);
+	resultField.textContent = resultMessage;
+	animateUser(index);
+	animateComp(compMove);
+	getScore(resultMessage);
 }
 
-function calcWinner(comp, user) {
+function getWinner(comp, user) {
 	const rock = 'won with rock';
 	const paper = 'won with paper';
 	const scissor = 'won with scissor';
 
-	let winner;
 	switch (comp) {
 		case 0:
-			winner = user == 1 ? `You ${paper}` : `Computer ${rock}`;
-			break;
+			return user == 1 ? `You ${paper}` : `Computer ${rock}`;
 		case 1:
-			winner = user == 2 ? `You ${scissor}` : `Computer ${paper}`;
-			break;
+			return user == 2 ? `You ${scissor}` : `Computer ${paper}`;
 		case 2:
-			winner = user == 0 ? `You ${rock}` : `Computer ${scissor}`;
-			break;
+			return user == 0 ? `You ${rock}` : `Computer ${scissor}`;
 	}
-	smileAnimation(winner);
-	return winner;
 }
 
-function userAnimation(value) {
+function getScore(message) {
+	let smileIcon = 'media/icon/draw_smile.svg';
+	const arr = message.split(' ');
+	if (arr.includes('You')) {
+		smileIcon = 'media/icon/smile.svg';
+		userScore++;
+	} else if (arr.includes('Computer')) {
+		smileIcon = 'media/icon/sad_smile.svg';
+		compScore++;
+	}
+	animateSmile(smileIcon);
+}
+
+function animateSmile(url) {
+	smileBtn.firstElementChild.src = url;
+	setScore();
+}
+
+function setScore() {
+	const scoreField = document.querySelector('.score');
+	scoreField.textContent = `Score   ${userScore}:${compScore}`;
+}
+
+function animateUser(value) {
 	for (let i = 0; i < items.length; i++) {
 		items[i].classList.add('active');
 		if (i != value) {
@@ -71,30 +74,27 @@ function userAnimation(value) {
 	}
 	const players = document.querySelector('.players');
 	players.classList.add('active');
-	resultField.classList.add('active');
 }
 
-function compAnimation(value) {
+function animateComp(value) {
+	compChoice.classList.add('active');
 	for (let index in items) {
 		if (index == value) {
-			compChoice.classList.add('active');
-			compChoice.firstElementChild.src = items[index].firstElementChild.src;
+			const image = items[index].style.backgroundImage;
+			console.log('image', image);
+			compChoice.style.backgroundImage = `${image}`;
 		}
 	}
 }
 
-let userScore = 0;
-let compScore = 0;
+function removeAnimation() {
+	const activeClasses = document.querySelectorAll('.active');
+	const hidedClasses = document.querySelectorAll('.hide');
 
-function smileAnimation(winner) {
-	const arr = winner.split(' ');
-	if (arr.includes('You')) {
-		userScore++;
-		smileBtn.firstElementChild.src = 'media/icon/smile.svg';
-	} else {
-		smileBtn.firstElementChild.src = 'media/icon/sad_smile.svg';
-		compScore++;
+	for (let element of activeClasses) {
+		element.classList.remove('active');
 	}
-	console.log(`Score: ${userScore} : ${compScore}`);
-	scoreField.textContent = `Score   ${userScore}:${compScore}`;
+	for (let element of hidedClasses) {
+		element.classList.remove('hide');
+	}
 }
