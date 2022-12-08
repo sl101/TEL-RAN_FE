@@ -4,7 +4,7 @@
 
 =========================================
 
-- ## [ ] hw_12_01 - ( [HTML](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_12_01/index.html), [ JS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_12_01/script/script.js), [ CSS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_12_01/style/style.css) ) [ \_"Slider"\_](https://sl101.github.io/TEL-RAN_FE/hw_12_01/)
+- - [x] hw_12_01 - ( [HTML](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_12_01/index.html), [ JS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_12_01/script/script.js), [ CSS](https://github.com/sl101/TEL-RAN_FE/blob/main/hw_12_01/style/style.css) ) [ \_"Slider"\_](https://sl101.github.io/TEL-RAN_FE/hw_12_01/)
 
 =========================================
 
