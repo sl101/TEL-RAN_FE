@@ -8,6 +8,14 @@
 	--font-Roboto: Roboto, sans-serif;
 }
 
+* {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
 /* PAGE ============================= */
 html,
 body {
@@ -33,26 +41,37 @@ body {
 	align-items: center;
 }
 
-.game-body h2 {
+.title {
 	margin-bottom: 40px;
 	font-weight: 700;
 	font-size: 40px;
+	letter-spacing: 4px;
+}
+
+.title span {
+	display: block;
+	margin-bottom: 15px;
+	text-align: center;
 }
 
 .game-body h3 {
 	font-size: 30px;
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 }
 
-ul {
+.list {
+	position: relative;
+	width: 600px;
+	height: 120px;
 	margin-bottom: 50px;
 	display: flex;
 	align-items: center;
-	gap: 40px;
 }
 
-.item {
-	position: relative;
+.item,
+.comp-choice {
+	position: absolute;
+	z-index: 20;
 	top: 0;
 	width: 120px;
 	height: 120px;
@@ -63,7 +82,29 @@ ul {
 	border-radius: 50%;
 	cursor: pointer;
 	box-shadow: 5px 5px 30px var(--black-color);
-	transition: background-color var(--hover-time) ease;
+	transition: opacity var(--hover-time) ease, background-color var(--hover-time) ease, transform var(--hover-time) ease;
+	;
+}
+
+.item:nth-child(2) {
+	transform: translateX(240px);
+}
+
+.item:nth-child(3) {
+	transform: translateX(480px);
+}
+
+.comp-choice {
+	z-index: 0;
+	transform: translateX(480px);
+	opacity: 0;
+	visibility: hidden;
+}
+
+.comp-choice.active {
+	opacity: 1;
+	visibility: visible;
+	cursor: default;
 }
 
 .item:hover {
@@ -74,18 +115,87 @@ ul {
 	top: 1px;
 }
 
-img {
+.item.active {
+	transform: translateX(0);
+	cursor: default;
+	pointer-events: none;
+}
+
+.item.active:hover {
+	background-color: salmon;
+}
+
+.item.hide {
+	opacity: 0;
+}
+
+.item img,
+.comp-choice img {
 	position: absolute;
+	z-index: 10;
 	top: 20px;
 	left: 20px;
 	z-index: 10;
 	width: 80px;
 	height: 80px;
-	cursor: unset;
+}
+
+.players {
+	margin-bottom: 30px;
+	position: relative;
+	width: 600px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 26px;
+	font-weight: 700;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 1s ease
+}
+
+.players.active {
+	opacity: 1;
+	visibility: visible;
+}
+
+.players span {
+	width: 115px;
+	text-align: center;
+	align-self: start;
+}
+
+.result.active {
+	opacity: 1;
 }
 
 .result {
 	text-align: center;
 	width: 100%;
 	height: 50px;
+	opacity: 0;
+	transition: opacity var(--hover-time) ease
+}
+
+.smile {
+	margin-bottom: 40px;
+	position: relative;
+	width: 100px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	background-color: #ffdd67;
+	border-radius: 50%;
+	cursor: pointer;
+	box-shadow: 5px 5px 30px var(--black-color);
+}
+
+.smile img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: transparent;
+	fill: transparent;
+	transition: opacity .3s ease;
 }
