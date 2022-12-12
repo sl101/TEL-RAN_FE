@@ -1,0 +1,141 @@
+/* VARIABLES =============== */
+* {
+	--white-color: #fff;
+	--black-color: #000;
+	--brend-color: #4fbfa5;
+	--accent-color: #00868A;
+
+	--hover-time: .4s;
+
+	--font-ABeeZee: "ABeeZee", sans-serif;
+}
+
+/* PAGE ============================= */
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: var(--font-ABeeZee);
+	font-style: regular;
+	font-size: 18px;
+	background-color: var(--white-color);
+	color: var(--black-color);
+}
+
+.header {
+	font-style: italic;
+	background-color: var(--brend-color);
+}
+
+.container {
+	max-width: 1325px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.nav-menu {
+	display: flex;
+	height: 100px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-menu ul {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 100px;
+	color: var(--white-color);
+	font-weight: 400;
+}
+
+.nav-menu button {
+	background-color: var(--white-color);
+	width: 194px;
+	height: 42px;
+	border-color: transparent;
+}
+
+.header__content {
+	padding: 10px 0 57px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: var(--white-color);
+}
+
+.header__offer {
+	max-width: 416px;
+}
+
+.header__offer h1 {
+	font-size: 48px;
+}
+
+.header__offer p {
+	margin: 20px 0 40px;
+}
+
+.header__content button {
+	max-width: 158px;
+	padding: 15px 25px;
+	text-transform: uppercase;
+	background-color: #00868A;
+	border-color: transparent;
+}
+
+.header__content img {
+	max-width: 763px;
+	min-height: 533px;
+}
+
+.gallery {
+	padding: 146px 0 130px;
+	font-style: italic;
+}
+
+.gallery h2 {
+	margin-bottom: 60px;
+	text-align: center;
+	font-size: 48px;
+	line-height: 72px;
+	color: var(--accent-color);
+}
+
+.cart__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 24px;
+}
+
+.cart__item {
+	max-width: 306px;
+	color: var(--white-color);
+}
+
+.cart__descr {
+
+	background-color: var(--accent-color);
+	display: flex;
+	justify-content: space-between;
+	padding: 25px 30px;
+}
+
+.cart__descr p {
+	max-width: 180px;
+}
+
+.arrow {
+	width: 50px;
+	height: 40px;
+	border: 1px solid var(--white-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.arrow img {
+	width: 20px;
+}

@@ -1,0 +1,101 @@
+/* VARIABLES =============== */
+* {
+	--white-color: #fff;
+	--black-color: #000;
+
+	--hover-time: .4s;
+
+	--font-Roboto: Roboto, sans-serif;
+}
+
+/* PAGE ============================= */
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: var(--font-Roboto);
+	font-weight: 400;
+	font-style: regular;
+	font-size: 18px;
+	background-color: var(--white-color);
+	color: var(--black-color);
+	transition: background-color var(--hover-time) ease;
+}
+
+/* MAIN CONTAINER ===================== */
+.container {
+	max-width: 1330px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	width: 80%;
+	min-height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+button {
+	position: relative;
+	top: 0;
+	border: 1px solid var(--black-color);
+	border-radius: 3px;
+	min-width: 250px;
+	outline: none;
+	padding: 3px 15px;
+	margin-bottom: 30px;
+	box-shadow: 7px 7px 20px var(--black-color);
+	transition: box-shadow var(--hover-time) ease, color var(--hover-time) ease, border-color var(--hover-time) ease;
+}
+
+
+button:focus {
+	box-shadow: 7px 7px 20px var(--black-color), inset 0 0 4px var(--black-color);
+}
+
+button:hover {
+	box-shadow: 1px 1px 5px var(--black-color);
+}
+
+button:active {
+	top: 1px;
+}
+
+.text {
+	max-width: 90%;
+	padding: 20px 50px;
+	margin: 0 auto;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	transition: background-color var(--hover-time) ease;
+}
+
+.text.active {
+	background-color: cornflowerblue;
+}
+
+body.active {
+	background-color: var(--black-color);
+	color: var(--white-color);
+}
+
+.active {
+	border-color: var(--white-color);
+}
+
+input {
+	border: 1px solid var(--black-color);
+	border-radius: 3px;
+	min-width: 250px;
+	outline: none;
+	background-color: lightcyan;
+	padding: 3px 15px;
+	margin-bottom: 20px;
+}

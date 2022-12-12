@@ -1,0 +1,77 @@
+/* VARIABLES =============== */
+* {
+	--white-color: #fff;
+	--black-color: #000;
+	--accent-color: #4fcdcd;
+	--brand-color: salmon;
+
+	--hover-time: .4s;
+
+	--font-Roboto: Roboto, sans-serif;
+}
+
+/* PAGE ============================= */
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: var(--font-Roboto);
+	font-weight: 400;
+	font-style: regular;
+	font-size: 18px;
+	background-color: var(--white-color);
+	color: var(--black-color);
+}
+
+/* SHELL ========================= */
+.wrapper {
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+/* MAIN UNIT ===================== */
+.main {
+	flex: 1 1 auto;
+}
+
+/* MAIN CONTAINER ===================== */
+.container {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1330px;
+	width: 100%;
+	padding: 50px 15px;
+	margin: 0 auto;
+	gap: 10px;
+}
+
+.cart {
+	width: 200px;
+	background-color: var(--accent-color);
+	border: 1px solid var(--black-color);
+	border-radius: 10px;
+	padding: 10px 20px;
+}
+
+.price {
+	color: red;
+}
+
+p {
+	color: var(--black-color);
+}
+
+p:first-child {
+	font-weight: 600;
+}
+
+.image__one {
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+}

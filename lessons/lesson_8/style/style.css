@@ -1,0 +1,96 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.form {
+	width: 500px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: teal;
+	padding: 20px;
+	margin: 50px;
+}
+
+.form input {
+	border: none;
+	outline: none;
+	background-color: white;
+	transition: box-shadow, transform;
+	transition-duration: .5s;
+	padding: 5px;
+}
+
+.form input:focus,
+.form button:focus {
+	box-shadow: 5px 5px 15px black;
+	transform: scale(1.1);
+}
+
+.form button {
+	border: none;
+	outline: none;
+	padding: 5px;
+	background-color: orangered;
+	color: white;
+	transition: box-shadow, transform;
+	transition-duration: .5s;
+}
+
+.main {
+	width: 200px;
+	height: 200px;
+	margin: 50px;
+	background-color: tomato;
+	border: 2px solid black;
+	/* transition: background-color .5s cubic-bezier(0.04, 2.9, 1, 1.11); */
+	transition: transform 1s cubic-bezier(0.04, 2.9, 1, 1.11);
+}
+
+.main:hover {
+	background-color: sienna;
+}
+
+.target {
+	width: 200px;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px;
+	border: 2px solid black;
+	/* transition: height 1s cubic-bezier(0.04, 2.9, 1, 1.11); */
+	transition: transform 1s cubic-bezier(0.04, 2.9, 1, 1.11);
+	/* transition: transform 1s cubic-bezier(0.04, 2.9, 1, 1.11), background-color .5s cubic-bezier(0.04, 2.9, 1, 1.11); */
+}
+
+.target:hover {
+	/* height: 500px; */
+	/* transform: rotateY(145deg) skew(10deg) scale(1.5); */
+	/* transform: rotateY(145deg); */
+	transform: rotate(45deg);
+	/* background-color: teal; */
+}
+
+.inner {
+	/* width: 100px;
+	height: 100px;
+	border: 2px solid black;
+	transition: transform, box-shadow;
+	transition-timing-function: cubic-bezier(0.04, 2.9, 1, 1.11), linear;
+	transition-duration: 1s, .2s; */
+}
+
+/* .target:hover .inner {
+	transform: rotate(360deg);
+	box-shadow: 0 0 15px 0 black; */
+/* } */

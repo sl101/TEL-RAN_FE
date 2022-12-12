@@ -1,0 +1,54 @@
+/* VARIABLES =============== */
+* {
+	--white-color: #fff;
+	--black-color: #000;
+
+	--hover-time: .4s;
+
+	--font-Roboto: Roboto, sans-serif;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: var(--font-Roboto);
+	font-weight: 400;
+	font-style: regular;
+	font-size: 18px;
+	background-color: var(--white-color);
+	color: var(--black-color);
+}
+
+.container,
+.container_two {
+	padding: 0 15px;
+	margin: 0 auto;
+	/* max-width: 1200px; */
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container_two {
+	flex-direction: column;
+}
+
+.btn-box {
+	display: flex;
+}
+
+button {
+	margin: 20px 10px;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	cursor: pointer;
+	transition: all var(--hover-time) ease;
+}

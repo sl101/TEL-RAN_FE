@@ -1,0 +1,104 @@
+/* VARIABLES =============== */
+* {
+	--white-color: #fff;
+	--black-color: #000;
+
+	--hover-time: .4s;
+
+	--font-Roboto: Roboto, sans-serif;
+}
+
+/* PAGE ============================= */
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: var(--font-Roboto);
+	font-weight: 400;
+	font-style: regular;
+	font-size: 18px;
+	background-color: var(--white-color);
+	color: var(--black-color);
+}
+
+/* SHELL ========================= */
+.wrapper {
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+/* MAIN UNIT ===================== */
+.main {
+	flex: 1 1 auto;
+}
+
+/* MAIN CONTAINER ===================== */
+.container {
+	max-width: 1330px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+/* ======================================= */
+
+body {
+	min-height: 100vh;
+}
+
+main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	background-color: lightblue;
+}
+
+#root {
+	max-width: 900px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#root div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 500;
+	font-size: 42px;
+	border: 1px solid black;
+	background-color: lightseagreen;
+	margin-bottom: 20px;
+	padding: 8px 15px;
+	box-shadow: 5px 5px 15px 0 black;
+	cursor: pointer;
+	transition: transform var(--hover-time) ease;
+}
+
+#root div:hover {
+	transform: translate(0, 2px);
+}
+
+.title {
+	max-width: 30%;
+	width: 100%;
+}
+
+.count {
+	margin-right: auto;
+}
+
+.price {
+	font-weight: 400;
+	color: darkred;
+	font-size: 32px;
+	transition: color var(--hover-time) ease;
+}
+
+#root div:hover .price {
+	color: wheat;
+}

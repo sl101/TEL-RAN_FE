@@ -1,0 +1,67 @@
+/* VARIABLES =============== */
+* {
+	--white-color: #fff;
+	--black-color: #000;
+
+	--hover-time: .4s;
+
+	--font-Roboto: Roboto, sans-serif;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: var(--font-Roboto);
+	font-weight: 400;
+	font-style: regular;
+	font-size: 18px;
+	background-color: var(--white-color);
+	color: var(--black-color);
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.clock {
+	position: relative;
+	width: 480px;
+	height: 480px;
+	background-image: url("https://media.istockphoto.com/id/1014875730/vector/clock-face-blank-hour-dial-dashes-mark-minutes-and-hours-simple-flat-vector-illustration.jpg?s=612x612&w=0&k=20&c=Z4E98A5tq-ANDKy7LHmp6YIpfRg9xcftPTfZVuMheow=");
+	background-size: cover;
+	border-radius: 50%;
+}
+
+.center {
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: var(--black-color);
+	top: 49%;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+
+.hand {
+	position: absolute;
+	top: 50%;
+	left: 110px;
+	width: 130px;
+	height: 3px;
+	/* transform: rotate(90deg); */
+	transform-origin: 100%;
+	background-color: var(--black-color);
+	transition: all var(--hover-time) ease;
+}
+
+#minutes-hand {
+	/* width: 100px; */
+}

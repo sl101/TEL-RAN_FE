@@ -1,0 +1,33 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.page {
+	max-width: 1200px;
+	width: 80%;
+	min-height: 100px;
+	padding: 40px;
+	margin: 0 auto;
+}
+
+.about-me {
+	background-color: #2ecc71;
+}
+
+.hobby {
+	background-color: #e74c3c;
+	text-align: center;
+}
+
+.work {
+	background-color: #1abc9c;
+}
+
+.hobby .img {
+	max-width: 100%;
+	/* width: 200px; */
+	height: 300px;
+	/* object-fit: cover; */
+}

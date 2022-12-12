@@ -1,0 +1,31 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	color: sienna;
+	text-align: center;
+}
+
+span {
+	display: block;
+}
+
+div {
+	border: 1px solid teal;
+	margin: 50px;
+	padding: 20px;
+}
+
+.hobby {
+	background-color: #bdc3c7;
+}
+
+.work {
+	background-color: #ffeaa7;
+}
+
+.friend {
+	background-color: #34ace0;
+}

@@ -1,0 +1,44 @@
+/* VARIABLES =============== */
+* {
+	--white-color: #fff;
+	--black-color: #000;
+
+	--hover-time: .4s;
+
+	--font-Roboto: Roboto, sans-serif;
+}
+
+/* PAGE ============================= */
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: var(--font-Roboto);
+	font-weight: 400;
+	font-style: regular;
+	font-size: 18px;
+	background-color: var(--white-color);
+	color: var(--black-color);
+}
+
+/* MAIN CONTAINER ===================== */
+.container {
+	max-width: 1330px;
+	padding: 20px 15px 70px;
+	margin: 0 auto;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.btn {
+	width: 80px;
+	height: 30px;
+	margin: 0 auto 30px;
+	cursor: pointer;
+}

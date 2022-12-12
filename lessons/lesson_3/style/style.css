@@ -1,0 +1,56 @@
+body {
+	padding: 50px 20px 100px;
+}
+
+.list-ol {
+	padding: 10px;
+	padding-left: 40px;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+
+.list-ul {
+	list-style: circle;
+	font-weight: 700;
+	font-size: 22px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+/* table tr:first-child {
+	background-color: #ddd;
+}
+
+table tr:last-child {
+	background-color: teal;
+} */
+/* ================================== */
+/* tr:nth-child(4n+1) {
+	background-color: greenyellow;
+}
+
+tr:nth-child(4n+2) {
+	background-color: red;
+}
+
+tr:nth-child(4n+3) {
+	background-color: teal;
+}
+
+tr:nth-child(4n+4) {
+	background-color: green;
+} */
+/* ================================== */
+
+/* tr:nth-child(2n) td:nth-child(2n) {
+	background-color: teal;
+}
+
+tr:nth-child(2n-1) td:nth-child(2n-1) {
+	background-color: teal;
+} */
+/* ==================================== */

@@ -1,0 +1,140 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	--accent-color: #1abc9c;
+	--accent-light: #dcffeb;
+	--black-color: #000;
+	--white-color: #fff;
+}
+
+ul,
+li,
+a {
+	text-decoration: none;
+	list-style: none;
+	color: inherit;
+}
+
+body {
+	font-family: Inter, san-serif;
+	font-size: 20px;
+	color: var(--black-color);
+}
+
+.wrapper {
+	max-width: 1410px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.container {
+	padding: 0 70px;
+}
+
+
+header {
+	background-color: var(--accent-color);
+}
+
+nav {
+	min-height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* padding-left: 70px; */
+}
+
+nav ul {
+	display: flex;
+}
+
+.links__list li {
+	padding: 3px 10px;
+	color: black;
+}
+
+.links__list a {
+	border-bottom: 1px solid transparent;
+	transition: border-color .4s ease;
+
+}
+
+.links__list a:hover {
+	border-color: var(--black-color);
+}
+
+.media__list li+li {
+	padding-left: 20px;
+}
+
+.media__list img {
+	max-width: 40px;
+	min-height: 40px;
+}
+
+.about__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.about__inner>* {
+	width: 50%;
+}
+
+.about__content {
+	flex: 0 0 50%;
+	max-width: 620px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	font-size: 35px;
+	margin-bottom: 25px;
+	align-items: center;
+	text-align: justify;
+}
+
+.projects {
+	background-color: var(--accent-light);
+	padding: 125px 0;
+}
+
+.projects__container {
+	/* padding: 0 70px; */
+}
+
+.projects__title {
+	margin-bottom: 50px;
+}
+
+.card__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card {
+	position: relative;
+	width: 30%;
+	height: 400px;
+	overflow-y: hidden;
+	background-image: url("../media/projects/arena.jpg");
+	background-size: cover;
+}
+
+.card:hover .info {
+	transform: translateY(0);
+}
+
+.info {
+	position: absolute;
+	transform: translateY(100%);
+	bottom: 0;
+	padding: 20px;
+	color: var(--white-color);
+	background-color: rgba(0, 0, 0, 0.3);
+	transition: transform .4s ease;
+}

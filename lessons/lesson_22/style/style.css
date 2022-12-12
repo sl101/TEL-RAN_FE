@@ -1,0 +1,103 @@
+/* VARIABLES =============== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	--white-color: #fff;
+	--black-color: #000;
+	--brand-color: #34495e;
+	--close-color: salmon;
+	--red-color: red;
+	--accent-color: rgb(6, 180, 6);
+
+	--hover-time: .4s;
+
+	--font-Roboto: Roboto, sans-serif;
+}
+
+body {
+	font-family: var(--font-Roboto);
+	font-weight: 400;
+	font-style: regular;
+	font-size: 18px;
+	background-color: var(--white-color);
+	color: var(--black-color);
+}
+
+.wrapp,
+.cart {
+	margin: 50px auto;
+	padding: 60px;
+	max-width: 700px;
+	width: 700px;
+	border-radius: 15px;
+	background-color: var(--brand-color);
+}
+
+input {
+	margin-bottom: 10px;
+	padding: 0 10px;
+	width: 100%;
+	height: 35px;
+	border: none;
+	border-radius: 7px;
+	outline: none;
+}
+
+button {
+	border: none;
+	width: 100%;
+	height: 35px;
+	background-color: var(--accent-color);
+	color: var(--white-color);
+	border-radius: 7px;
+	outline: none;
+	cursor: pointer;
+}
+
+.cart {
+	position: relative;
+	z-index: 10;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: white;
+	cursor: pointer;
+}
+
+.close-btn {
+	position: absolute;
+	z-index: 200;
+	top: 0;
+	right: 0;
+	transform: translate(50%, -50%);
+	width: 33px;
+	height: 33px;
+	border: none;
+	border-radius: 50%;
+	background-color: var(--close-color);
+	color: var(--white-color);
+	opacity: 0;
+	outline: none;
+	cursor: pointer;
+	transition: background-color var(--hover-time) ease, opacity var(--hover-time) ease;
+}
+
+.close-btn::after {}
+
+.close-btn:hover {
+	background-color: var(--red-color);
+}
+
+.sort {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	color: var(--white-color);
+}
+
+#sort-price {
+	max-width: 100px;
+}
