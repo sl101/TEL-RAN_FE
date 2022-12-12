@@ -2,7 +2,6 @@
 * {
 	--white-color: #fff;
 	--black-color: #000;
-	--darc-color: rgba(0, 0, 0, .8);
 
 	--hover-time: .4s;
 
@@ -20,21 +19,27 @@ body {
 	font-weight: 400;
 	font-style: regular;
 	font-size: 18px;
-	background-color: var(--darc-color);
-	color: var(--black-color);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.wrapper {
-	padding: 5px;
-	display: grid;
-	grid-template-columns: repeat(10, 100px);
-	grid-template-rows: repeat(6, 50px);
 	background-color: var(--white-color);
+	color: var(--black-color);
 }
 
-.item {
-	border: 1px dashed var(--black-color);
+/* SHELL ========================= */
+.wrapper {
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+/* MAIN UNIT ===================== */
+.main {
+	flex: 1 1 auto;
+}
+
+/* MAIN CONTAINER ===================== */
+.container {
+	max-width: 1330px;
+	padding: 0 15px;
+	margin: 0 auto;
 }

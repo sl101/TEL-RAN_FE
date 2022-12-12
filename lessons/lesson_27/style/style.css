@@ -1,0 +1,191 @@
+/* VARIABLES =============== */
+* {
+	--white-color: #fff;
+	--black-color: #000;
+
+	--hover-time: .4s;
+
+	--font-Roboto: Roboto, sans-serif;
+}
+
+/* PAGE ============================= */
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: var(--font-Roboto);
+	font-weight: 400;
+	font-style: regular;
+	font-size: 18px;
+	background-color: var(--white-color);
+	color: var(--black-color);
+}
+
+/* auto-fill / auto-fit */
+/* auto-fill - min */
+/* auto-fir - max */
+/* repeat */
+
+/* .item {
+	border: 1px solid black;
+} */
+
+/* =============================================== */
+/* .items { */
+/* display: grid; */
+/* grid-template-columns: minmax(300px, 400px); */
+/* grid-template-columns: 100px; */
+/* grid-template-columns: minmax(auto, 400px); */
+/* grid-template-columns: minmax(300px, 1fr); */
+/* grid-template-columns: minmax(1fr, 400px); */
+/* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+/* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+/* } */
+
+/* ===================================================== */
+
+/* .items-auto-fill {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.items-auto-fit {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+} */
+
+/* ================================================ */
+
+/* .list {
+	display: grid;
+	grid-template-columns: [start] 200px [middle-first] 200px [middle-second] 200px [middle-third] 200px [middle-forth] 200px [end];
+	grid-template-rows: [start] 50px [middle-first] 50px [middle-second] 50px[end];
+	gap: 15px;
+}
+
+.item-10 {
+	grid-column: start;
+	grid-row: start;
+}
+
+.item-8 {
+	grid-column: middle-second;
+	grid-row: start;
+}
+
+.item-6 {
+	grid-column: - end;
+	grid-row: start / end;
+}
+
+.item-7 {
+	grid-column: middle-first;
+	grid-row: middle-first / end;
+}
+
+.item-5 {
+	grid-column: middle-second;
+	grid-row: middle-first / end;
+}
+
+.item-4 {
+	grid-column: middle-third;
+	grid-row: middle-first / end;
+} */
+/* ================================================= */
+
+.wrapper {
+	min-height: 100vh;
+	display: grid;
+	grid-template-columns: 100px 1fr;
+	grid-template-rows: 100px 1fr 100px
+}
+
+.header {
+	background-color: teal;
+	grid-column: 1 / 3;
+	display: grid;
+	grid-template-columns: 100px minmax(200px, 1fr);
+	grid-auto-rows: 100px;
+}
+
+
+.logo img {
+	height: 100%
+}
+
+.menu ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	grid-auto-rows: 100px;
+	align-items: center;
+	font-size: 26px;
+}
+
+aside {
+	background-color: salmon;
+}
+
+footer {
+	background-color: teal;
+	grid-column: 1/3;
+}
+
+main {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	grid-auto-rows: 200px;
+	gap: 30px;
+}
+
+
+
+.img-1 {
+	background-image: url("https://thumbs.dreamstime.com/b/merry-christmas-happy-new-year-12013550.jpg");
+}
+
+.img-2 {
+	background-image: url("https://media1.popsugar-assets.com/files/thumbor/n8bUt1yPUD0zvO0XmWNFuVj763k/685x0:3345x2660/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2020/01/07/726/n/1922441/419ff9b05e14b139162ef6.64727550_/i/Best-Winter-Photos.jpg");
+}
+
+.img-3 {
+	background-image: url("https://images.unsplash.com/photo-1546708623-6e5671915b91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8OXx8fGVufDB8fHx8&w=1000&q=80");
+}
+
+.img-4 {
+	background-image: url("https://parade.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTkwNTc2MDAyMTcyMzMxMTMz/winter-instagram-captions-1-jpg.jpg");
+}
+
+.img-5 {
+	background-image: url("https://play-lh.googleusercontent.com/kqjV1NiiN03IHiZMW9x0tT06M9VhMi-kkivdIjJFnfDX0wSWkDab7DLHKM5pFq1ggRA");
+}
+
+.img-6 {
+	background-image: url("https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/field_blog_entry_teaser_image/2019-12/coffee-1156595_960_720.jpg?itok=mJg12Q0e");
+}
+
+.img-7 {
+	background-image: url("https://thumbs.dreamstime.com/b/merry-christmas-happy-new-year-12013550.jpg");
+}
+
+.img-8 {
+	background-image: url("https://thumbs.dreamstime.com/b/merry-christmas-happy-new-year-12013550.jpg");
+}
+
+.img-9 {
+	background-image: url("https://thumbs.dreamstime.com/b/merry-christmas-happy-new-year-12013550.jpg");
+}
+
+.img-10 {
+	background-image: url("https://thumbs.dreamstime.com/b/merry-christmas-happy-new-year-12013550.jpg");
+}
+
+.img-11 {
+	background-image: url("https://thumbs.dreamstime.com/b/merry-christmas-happy-new-year-12013550.jpg");
+}
+
+.img-12 {
+	background-image: url("https://thumbs.dreamstime.com/b/merry-christmas-happy-new-year-12013550.jpg");
+}

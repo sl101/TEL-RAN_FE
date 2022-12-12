@@ -24,6 +24,13 @@ body {
 	color: var(--black-color);
 }
 
+.sub-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {}
+
 .header {
 	font-style: italic;
 	background-color: var(--brend-color);
@@ -116,7 +123,6 @@ body {
 }
 
 .cart__descr {
-
 	background-color: var(--accent-color);
 	display: flex;
 	justify-content: space-between;
@@ -138,4 +144,21 @@ body {
 
 .arrow img {
 	width: 20px;
+}
+
+.footer-container {
+	text-align: end;
+	border-top: 1px solid var(--accent-color);
+}
+
+.media {
+	color: var(--accent-color);
+	font-size: 24px;
+}
+
+.media i {
+	width: 50px;
+	border-left: 1px solid var(--accent-color);
+	text-align: center;
+	line-height: 50px;
 }
