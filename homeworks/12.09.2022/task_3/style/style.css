@@ -41,7 +41,7 @@ body {
 }
 
 .item {
-	border: 1px dashed var(--black-color);
+	border: 1px dotted var(--black-color);
 	background-color: var(--light-color);
 	display: flex;
 	justify-content: flex-end;
