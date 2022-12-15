@@ -1,6 +1,8 @@
 ## Homeworks
 
-- [12.09.2022](https://sl101.github.io/TEL-RAN_FE/homeworks/12.09.2022)
+- [adaptiv](https://sl101.github.io/TEL-RAN_FE/homeworks/12.14.2022/)
+
+- [grid layouts](https://sl101.github.io/TEL-RAN_FE/homeworks/12.09.2022)
 
 - [RPS game](https://sl101.github.io/TEL-RAN_FE/homeworks/12.06.2022/) | [HTML](https://github.com/sl101/TEL-RAN_FE/blob/main/homeworks/12.06.2022/index.html) | [ JS](https://github.com/sl101/TEL-RAN_FE/blob/main/homeworks/12.06.2022/script/script.js) | [ CSS](https://github.com/sl101/TEL-RAN_FE/blob/main/homeworks/12.06.2022/style/style.css)
 

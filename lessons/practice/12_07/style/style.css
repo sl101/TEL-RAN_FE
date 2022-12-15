@@ -2,6 +2,7 @@
 * {
 	--white-color: #fff;
 	--black-color: #000;
+	--grey-color: #c4c4c4;
 	--brend-color: #4fbfa5;
 	--accent-color: #00868A;
 
@@ -27,9 +28,8 @@ body {
 .sub-header {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
-
-.logo {}
 
 .header {
 	font-style: italic;
@@ -118,7 +118,23 @@ body {
 }
 
 .cart__item {
+	position: relative;
 	max-width: 306px;
+	color: var(--white-color);
+}
+
+.decor-new::after {
+	content: "NEW";
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	width: 90px;
+	height: 40px;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	line-height: 40px;
+	background-color: var(--accent-color);
 	color: var(--white-color);
 }
 
@@ -148,17 +164,109 @@ body {
 
 .footer-container {
 	text-align: end;
-	border-top: 1px solid var(--accent-color);
+	border-top: 1px solid var(--grey-color);
 }
 
 .media {
 	color: var(--accent-color);
 	font-size: 24px;
+
 }
 
 .media i {
 	width: 50px;
-	border-left: 1px solid var(--accent-color);
+	border-left: 1px solid var(--grey-color);
 	text-align: center;
 	line-height: 50px;
+}
+
+@media all and (max-width:1250px) {
+
+	.media {
+		text-align: center;
+	}
+
+	.fa-instagram {
+		border-right: 1px solid var(--grey-color);
+	}
+
+	.media i {
+		width: 77px;
+		line-height: 90px;
+	}
+
+	.header {
+		padding-top: 30px;
+	}
+
+	.container {
+		max-width: 445px;
+	}
+
+	.header__img {
+		display: none;
+	}
+
+	.nav-menu {
+		flex-direction: column;
+		align-items: flex-start;
+		height: 150px;
+	}
+
+	.nav-menu ul {
+		margin-bottom: 20px;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 0;
+		column-gap: 35px;
+		row-gap: 10px;
+		color: var(--white-color);
+		font-weight: 400;
+		align-items: center;
+	}
+
+	.nav-menu button {
+		width: 415px;
+		margin: 0 auto;
+		min-height: 42px;
+	}
+
+	.header__content {
+		padding: 52px 0 66px;
+	}
+
+	.gallery {
+		padding: 70px 0 20px;
+	}
+
+	.gallery h2 {
+		text-align: left;
+		margin-bottom: 30px;
+	}
+
+	.cart__list {
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	.cart__item {
+		max-width: 100%;
+	}
+
+	.cart__img {
+		width: 410px;
+		height: 135px;
+		object-fit: cover;
+	}
+
+	.cart__descr p {
+		max-width: 200px;
+	}
+
+	.cart__descr {
+		padding: 16px 40px;
+	}
+
+	.footer-container {
+		border-color: transparent;
+	}
 }

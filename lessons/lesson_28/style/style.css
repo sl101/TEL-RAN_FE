@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+/* VARIABLES =============== */
+* {
+	--accent-color: #f7654a;
+	--white-color: #ffffff;
+	--light-color: #f7f7f7;
+	--light-darc-color: #999999;
+	--darc-color: #404149;
+	--black-color: #000000;
+
+	--hover-time: .4s;
+
+	--font-Roboto: Roboto, sans-serif;
+}
+
+/* PAGE ============================= */
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: var(--darc-color);
+}
+
+/* MAIN CONTAINER ===================== */
+.container {
+	max-width: 1130px;
+	margin: 0 auto;
+}
+
+/* header */
+
+.header {
+	padding: 0 15px;
+	min-height: 740px;
+	background-image: url("../media/bg/main.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.h1 {
+	margin-bottom: 35px;
+	max-width: 734px;
+	font-weight: 500;
+	font-size: 64px;
+	line-height: 95px;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	color: var(--white-color);
+}
+
+.header-h4 {
+	font-size: 18px;
+	line-height: 27px;
+	text-transform: uppercase;
+	color: var(--white-color);
+}
+
+/* about */
+
+.about {
+	padding: 250px 15px 110px;
+	min-height: 1080px;
+	position: relative;
+}
+
+.experience {
+	padding: 57px 130px;
+	min-height: 300px;
+	position: absolute;
+	top: -150px;
+	left: 50%;
+	transform: translate(-50%);
+	background-color: var(--light-color);
+}
+
+.about-items {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-items: center;
+	gap: 30px;
+}
+
+.about-item {
+	width: 190px;
+	font-weight: 500;
+	text-align: center;
+}
+
+.about-h4 {
+	font-size: 72px;
+	line-height: 107px;
+	text-transform: uppercase;
+	color: var(--accent-color);
+}
+
+.about-h5 {
+	font-size: 36px;
+	line-height: 53px;
+	text-transform: uppercase;
+	color: var(--black-color);
+}
+
+.about-p {
+	font-size: 18px;
+	line-height: 27px;
+	color: var(--light-darc-color);
+}
+
+@media screen and (max-width :1200px) {
+	.header {
+		background-position: center;
+	}
+
+	.about-items {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width :780px) {
+	.h1 {
+		font-size: 48px;
+	}
+
+	.experience {
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.about-items {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(4, 1fr);
+	}
+}
+
+/* projects */
+
+.projects-h2 {
+	margin-bottom: 60px;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 53px;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--darc-color);
+
+}
+
+.projects {
+	display: flex;
+	gap: 30px;
+}
+
+.project {
+	max-width: 350px;
+}
+
+.project img {
+	margin-bottom: 45px;
+}
+
+.line {
+	margin-bottom: 15px;
+	width: 55px;
+	height: 6px;
+	background-color: var(--accent-color);
+}
+
+.project-h3 {
+	margin-bottom: 20;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 36px;
+	color: var(--darc-color)
+}
+
+.project-p {
+	font-family: "Open Sans";
+	line-height: 22px;
+	color: var(--light-darc-color);
+}
+
+@media screen and (max-width :1200px) {
+	.about {
+		padding-top: 450px;
+	}
+
+	.projects {
+		flex-direction: column;
+		align-items: center;
+		gap: 50px;
+	}
+}
+
+@media screen and (max-width :780px) {
+	.experience {
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.about {
+		padding-top: 880px;
+	}
+}
+
+/* contact */
+
+.contact {
+	padding: 30px 0 45px;
+	background-color: var(--accent-color);
+}
+
+.contact-content {
+	padding: 0 15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 30px;
+}
+
+.contact-text {
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	color: var(--white-color);
+}
+
+.contact-h2 {
+	font-size: 48px;
+	line-height: 71px;
+}
+
+.contact-h4 {
+	font-size: 24px;
+	line-height: 36px;
+}
+
+.contact-button {
+	padding: 10px 15px;
+	width: 175px;
+	border: none;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: 0.05em;
+	background-color: var(--white-color);
+}
+
+@media screen and (max-width :780px) {
+	.contact-content {
+		text-align: center;
+		justify-content: center;
+	}
+}
