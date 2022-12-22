@@ -1,0 +1,48 @@
+/* VARIABLES =============== */
+* {
+	--white-color: #fff;
+	--black-color: #000;
+
+	--hover-time: .4s;
+
+	--font-Roboto: Roboto, sans-serif;
+}
+
+/* 
+У вас есть див и внутри заголовок:
+Если Ширина больше 1240px - цвет блока зеленый, размер шрифта заголовка - 40px 
+Ширина больше от 840px до 1240 px - цвет блока синий, размер шрифта заголовка - 35px 
+Ширина больше от 640px до 840 px - цвет блока оранжевый, размер шрифта заголовка - 30px 
+Ширина меньше  640px - цвет блока черный, размер шрифта заголовка - 20px */
+
+body {
+	/* background-color: var(--white--color);
+	color: var(--black--color); */
+}
+
+.container {
+	background-color: green;
+	font-size: 40px;
+}
+
+@media (max-width:1240px) {
+	.container {
+		background-color: blue;
+		font-size: 35px;
+	}
+}
+
+@media (max-width:840px) {
+	.container {
+		background-color: orangered;
+		font-size: 30px;
+	}
+}
+
+@media (max-width:640px) {
+	.container {
+		background-color: black;
+		font-size: 32px;
+		color: wheat;
+	}
+}
